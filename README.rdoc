@@ -1,18 +1,13 @@
 = yawn
 
-Description goes here.
+Yawn is asynchronous HTTP.  It's suitable for sending requests that you don't want to block your application with.  I'm using it to send error notifications and logging information.  I just want to send requests without worrying about my app dying if the other side goes down.
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but
-   bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+  y = Yawn.new
+  y.get "http://google.com"
+  y.post("http://example.com", "some data") do |response|
+    # optional callback does something with response
+  end
 
 == Copyright
 
-Copyright (c) 2009 Kyle Maxwell. See LICENSE for details.
+Copyright (c) 2009 Kyle Maxwell. MIT Licensed.
