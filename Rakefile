@@ -10,6 +10,7 @@ begin
     gem.email = "kyle@kylemaxwell.com"
     gem.homepage = "http://github.com/fizx/yawn"
     gem.authors = ["Kyle Maxwell"]
+    gem.dependency "curl-multi"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
