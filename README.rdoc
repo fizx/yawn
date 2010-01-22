@@ -4,10 +4,10 @@ Yawn is asynchronous HTTP.  It's suitable for sending requests that you don't wa
 
   y = Yawn.new
   y.get "http://google.com"
-  y.post("http://example.com", "some data") do |response|
+  y.post("http://example.com", "some data") do |curl_easy_object|
     # optional callback does something with response
   end
 
 == Copyright
 
-Copyright (c) 2009 Kyle Maxwell. MIT Licensed.
+Copyright (c) 2009-2010 Kyle Maxwell. MIT Licensed.
